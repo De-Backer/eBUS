@@ -1,0 +1,420 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:D_Schottky D?
+U 1 1 6428034B
+P 2100 1300
+F 0 "D?" V 2054 1380 50  0000 L CNN
+F 1 "D_Schottky" V 2145 1380 50  0000 L CNN
+F 2 "" H 2100 1300 50  0001 C CNN
+F 3 "~" H 2100 1300 50  0001 C CNN
+	1    2100 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 64280881
+P 2100 1750
+F 0 "D?" V 2054 1830 50  0000 L CNN
+F 1 "D_Schottky" V 2145 1830 50  0000 L CNN
+F 2 "" H 2100 1750 50  0001 C CNN
+F 3 "~" H 2100 1750 50  0001 C CNN
+	1    2100 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 64280B6E
+P 2100 2250
+F 0 "D?" V 2054 2330 50  0000 L CNN
+F 1 "D_Schottky" V 2145 2330 50  0000 L CNN
+F 2 "" H 2100 2250 50  0001 C CNN
+F 3 "~" H 2100 2250 50  0001 C CNN
+	1    2100 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 64280EF3
+P 2100 2800
+F 0 "D?" V 2054 2880 50  0000 L CNN
+F 1 "D_Schottky" V 2145 2880 50  0000 L CNN
+F 2 "" H 2100 2800 50  0001 C CNN
+F 3 "~" H 2100 2800 50  0001 C CNN
+	1    2100 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 2100 2800 2100
+Wire Wire Line
+	2800 2100 2800 1100
+Wire Wire Line
+	2800 1100 2100 1100
+Wire Wire Line
+	2100 1100 2100 1150
+Wire Wire Line
+	2100 1900 2700 1900
+Wire Wire Line
+	2700 1900 2700 3050
+Wire Wire Line
+	2700 3050 2100 3050
+Wire Wire Line
+	2100 3050 2100 2950
+Wire Wire Line
+	2100 2400 2100 2550
+Wire Wire Line
+	2100 1450 2100 1500
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 642821DD
+P 1200 1900
+F 0 "J?" H 1308 2081 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1308 1990 50  0000 C CNN
+F 2 "" H 1200 1900 50  0001 C CNN
+F 3 "~" H 1200 1900 50  0001 C CNN
+	1    1200 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1900 1900 1900
+Wire Wire Line
+	1900 1900 1900 1500
+Wire Wire Line
+	1900 1500 2100 1500
+Connection ~ 2100 1500
+Wire Wire Line
+	2100 1500 2100 1600
+Wire Wire Line
+	1400 2000 1900 2000
+Wire Wire Line
+	1900 2000 1900 2550
+Wire Wire Line
+	1900 2550 2100 2550
+Connection ~ 2100 2550
+Wire Wire Line
+	2100 2550 2100 2650
+$Comp
+L Device:D_Zener D?
+U 1 1 64283542
+P 3200 2150
+F 0 "D?" V 3154 2230 50  0000 L CNN
+F 1 "8V1" V 3245 2230 50  0000 L CNN
+F 2 "" H 3200 2150 50  0001 C CNN
+F 3 "~" H 3200 2150 50  0001 C CNN
+	1    3200 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NPN_CBE Q?
+U 1 1 64284523
+P 3300 2700
+F 0 "Q?" H 3491 2746 50  0000 L CNN
+F 1 "Q_NPN_CBE" H 2850 2900 50  0000 L CNN
+F 2 "" H 3500 2800 50  0001 C CNN
+F 3 "~" H 3300 2700 50  0001 C CNN
+	1    3300 2700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2300 3200 2500
+Wire Wire Line
+	3200 2900 3200 3050
+Wire Wire Line
+	3200 3050 2900 3050
+Connection ~ 2700 3050
+Wire Wire Line
+	3200 2000 3200 1100
+Wire Wire Line
+	3200 1100 2900 1100
+Connection ~ 2800 1100
+$Comp
+L Isolator:EL817 U?
+U 1 1 64287A7A
+P 4150 2600
+F 0 "U?" H 4150 2925 50  0000 C CNN
+F 1 "EL817" H 4150 2834 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 3950 2400 50  0001 L CIN
+F 3 "http://www.everlight.com/file/ProductFile/EL817.pdf" H 4150 2600 50  0001 L CNN
+	1    4150 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Isolator:EL817 U?
+U 1 1 6428896C
+P 7200 2450
+F 0 "U?" H 7200 2775 50  0000 C CNN
+F 1 "EL817" H 7200 2684 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 7000 2250 50  0001 L CIN
+F 3 "http://www.everlight.com/file/ProductFile/EL817.pdf" H 7200 2450 50  0001 L CNN
+	1    7200 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6428CCEA
+P 3850 2150
+F 0 "R?" H 3920 2196 50  0000 L CNN
+F 1 "220R" H 3920 2105 50  0000 L CNN
+F 2 "" V 3780 2150 50  0001 C CNN
+F 3 "~" H 3850 2150 50  0001 C CNN
+	1    3850 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2700 3850 2700
+$Comp
+L Device:D D?
+U 1 1 6428FDA8
+P 3500 1100
+F 0 "D?" H 3500 883 50  0000 C CNN
+F 1 "D" H 3500 974 50  0000 C CNN
+F 2 "" H 3500 1100 50  0001 C CNN
+F 3 "~" H 3500 1100 50  0001 C CNN
+	1    3500 1100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3200 1100 3350 1100
+Connection ~ 3200 1100
+$Comp
+L Device:C C?
+U 1 1 64290E3F
+P 4700 2000
+F 0 "C?" H 4815 2046 50  0000 L CNN
+F 1 "C" H 4815 1955 50  0000 L CNN
+F 2 "" H 4738 1850 50  0001 C CNN
+F 3 "~" H 4700 2000 50  0001 C CNN
+	1    4700 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1800 4700 1850
+Wire Wire Line
+	3850 2300 3850 2500
+Wire Wire Line
+	3850 2000 3850 1800
+Wire Wire Line
+	3850 1800 4700 1800
+$Comp
+L Amplifier_Operational:OPA188xxDBV U?
+U 1 1 642A0312
+P 5650 2350
+F 0 "U?" H 5994 2396 50  0000 L CNN
+F 1 "OPA188xxDBV" H 5994 2305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 5650 2350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa188.pdf" H 5650 2550 50  0001 C CNN
+	1    5650 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3050 4700 3050
+Wire Wire Line
+	5550 3050 5550 2650
+Connection ~ 3200 3050
+Wire Wire Line
+	4700 2150 4700 2200
+Connection ~ 4700 3050
+Wire Wire Line
+	4700 3050 5100 3050
+Wire Wire Line
+	5550 2050 5550 1800
+Wire Wire Line
+	5550 1800 5100 1800
+Connection ~ 4700 1800
+$Comp
+L Device:R R?
+U 1 1 642A43DA
+P 2900 2700
+F 0 "R?" H 2970 2746 50  0000 L CNN
+F 1 "22K" H 2970 2655 50  0000 L CNN
+F 2 "" V 2830 2700 50  0001 C CNN
+F 3 "~" H 2900 2700 50  0001 C CNN
+	1    2900 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 642A4B85
+P 2900 1350
+F 0 "R?" H 2970 1396 50  0000 L CNN
+F 1 "100K" H 2970 1305 50  0000 L CNN
+F 2 "" V 2830 1350 50  0001 C CNN
+F 3 "~" H 2900 1350 50  0001 C CNN
+	1    2900 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1200 2900 1100
+Connection ~ 2900 1100
+Wire Wire Line
+	2900 1100 2800 1100
+Wire Wire Line
+	2900 1500 2900 1650
+Wire Wire Line
+	2900 2850 2900 3050
+Connection ~ 2900 3050
+Wire Wire Line
+	2900 3050 2700 3050
+$Comp
+L Regulator_Linear:LM78L05_SO8 U?
+U 1 1 642ABDBA
+P 4150 1100
+F 0 "U?" H 4150 1342 50  0000 C CNN
+F 1 "LM78L05_SO8" H 4150 1251 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4250 1300 50  0001 C CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MC78L06A-D.pdf" H 4350 1100 50  0001 C CNN
+	1    4150 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1100 3850 1100
+Wire Wire Line
+	4450 1100 4700 1100
+Wire Wire Line
+	4700 1100 4700 1800
+Wire Wire Line
+	4150 1400 4150 2200
+Wire Wire Line
+	4150 2200 4700 2200
+Connection ~ 4700 2200
+Wire Wire Line
+	4700 2200 4700 3050
+Wire Wire Line
+	2900 1650 5350 1650
+Wire Wire Line
+	5350 1650 5350 2250
+Connection ~ 2900 1650
+Wire Wire Line
+	2900 1650 2900 2550
+$Comp
+L Device:R R?
+U 1 1 642C3B7D
+P 5100 2050
+F 0 "R?" H 5170 2096 50  0000 L CNN
+F 1 "100K" H 5170 2005 50  0000 L CNN
+F 2 "" V 5030 2050 50  0001 C CNN
+F 3 "~" H 5100 2050 50  0001 C CNN
+	1    5100 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 642C4121
+P 5100 2750
+F 0 "R?" H 5170 2796 50  0000 L CNN
+F 1 "100K" H 5170 2705 50  0000 L CNN
+F 2 "" V 5030 2750 50  0001 C CNN
+F 3 "~" H 5100 2750 50  0001 C CNN
+	1    5100 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2900 5100 3050
+Connection ~ 5100 3050
+Wire Wire Line
+	5100 3050 5550 3050
+Wire Wire Line
+	5100 2600 5100 2450
+Wire Wire Line
+	5100 1900 5100 1800
+Connection ~ 5100 1800
+Wire Wire Line
+	5100 1800 4700 1800
+Wire Wire Line
+	5350 2450 5100 2450
+Connection ~ 5100 2450
+Wire Wire Line
+	5100 2450 5100 2200
+$Comp
+L Device:R R?
+U 1 1 642C803B
+P 6650 2350
+F 0 "R?" V 6443 2350 50  0000 C CNN
+F 1 "330R" V 6534 2350 50  0000 C CNN
+F 2 "" V 6580 2350 50  0001 C CNN
+F 3 "~" H 6650 2350 50  0001 C CNN
+	1    6650 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6800 2350 6900 2350
+Wire Wire Line
+	6900 2550 6900 3050
+Wire Wire Line
+	6900 3050 5550 3050
+Connection ~ 5550 3050
+Wire Wire Line
+	5950 2350 6500 2350
+Wire Wire Line
+	4450 2700 4450 3400
+Wire Wire Line
+	4450 3400 7500 3400
+Wire Wire Line
+	7500 3400 7500 2550
+$Comp
+L Device:R R?
+U 1 1 642CCF5E
+P 7900 3250
+F 0 "R?" V 7693 3250 50  0000 C CNN
+F 1 "330R" V 7784 3250 50  0000 C CNN
+F 2 "" V 7830 3250 50  0001 C CNN
+F 3 "~" H 7900 3250 50  0001 C CNN
+	1    7900 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 2500 4550 2500
+Wire Wire Line
+	4550 2500 4550 3250
+Wire Wire Line
+	4550 3250 7750 3250
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 642CF4B6
+P 8500 3250
+F 0 "J?" H 8528 3276 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 8528 3185 50  0000 L CNN
+F 2 "" H 8500 3250 50  0001 C CNN
+F 3 "~" H 8500 3250 50  0001 C CNN
+	1    8500 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3400 8300 3400
+Wire Wire Line
+	8300 3400 8300 3350
+Connection ~ 7500 3400
+Wire Wire Line
+	8300 3250 8050 3250
+Wire Wire Line
+	7500 2350 8300 2350
+Wire Wire Line
+	8300 2350 8300 3150
+Text Notes 1100 1450 0    50   ~ 0
+eBUS
+Text Notes 4850 2450 0    50   ~ 0
+2.5V
+Text Notes 2950 3150 3    50   ~ 0
+tipping punt 14V => 2.5V\n
+Text Notes 8550 3050 0    50   ~ 0
+USART
+Text Notes 4450 2450 0    50   ~ 0
+TX
+Text Notes 7550 2300 0    50   ~ 0
+RX
+Text Notes 1750 6650 0    50   ~ 0
+Nog te testen op fouten!
+$EndSCHEMATC
